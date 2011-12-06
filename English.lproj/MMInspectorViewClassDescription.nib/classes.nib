@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {classDescriptionChanged = id; }; 
+            CLASS = MMInspectorViewClassDescription; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {classDescriptionController = NSObjectController; nibView = NSView; }; 
+            SUPERCLASS = NSView; 
+        }
+    ); 
+    IBVersion = 1; 
+}

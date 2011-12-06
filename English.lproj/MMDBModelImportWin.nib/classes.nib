@@ -1,0 +1,27 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                connectToDB = id; 
+                importTablesAtLast = id; 
+                setupNextTable = id; 
+                setupPreviousTable = id; 
+                unconnectToDB = id; 
+            }; 
+            CLASS = MMDBModelImportWinCont; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                importer = MMDBModelImporter; 
+                importerController = NSObjectController; 
+                nextButtonEntities = NSButton; 
+                prevButtonEntities = NSButton; 
+                stepDescription = NSTextField; 
+                stepViews = NSTabView; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = MMDBModelImporter; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

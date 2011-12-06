@@ -1,0 +1,58 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                addAttribute = id; 
+                addClassDescription = id; 
+                addItem = id; 
+                addRelation = id; 
+                openInspector = id; 
+                removeItem = id; 
+                updateModel = id; 
+            }; 
+            CLASS = MMDocMainWinCont; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                attributeInspectorView = MMInspectorViewAttribute; 
+                classDescriptionInspectorView = MMInspectorViewClassDescription; 
+                inspectorTabView = NSTabView; 
+                modelInspectorView = MMInspectorViewModel; 
+                modelList = NSOutlineView; 
+                relationInspectorView = MMInspectorViewRelation; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {
+            CLASS = MMInspectorViewAttribute; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {attribute = MMAttribute; nibView = NSView; }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {
+            ACTIONS = {classDescriptionChanged = id; }; 
+            CLASS = MMInspectorViewClassDescription; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                attributeTable = NSTableView; 
+                classDescription = MCPClassDescription; 
+                nibView = NSView; 
+                relationTable = NSTableView; 
+            }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {
+            CLASS = MMInspectorViewModel; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {model = MMModel; nibView = NSView; }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {
+            CLASS = MMInspectorViewRelation; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {nibView = NSView; relation = MCPRelation; }; 
+            SUPERCLASS = NSView; 
+        }
+    ); 
+    IBVersion = 1; 
+}

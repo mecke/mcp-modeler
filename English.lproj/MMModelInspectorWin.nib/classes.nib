@@ -1,0 +1,19 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = MMInspectorViewModel; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {modelController = NSObjectController; nibView = NSView; }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {
+            ACTIONS = {updateModel = id; }; 
+            CLASS = MMModelInspectorWinCont; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {modelInspectorView = MMInspectorViewModel; }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

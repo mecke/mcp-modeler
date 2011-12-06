@@ -1,0 +1,19 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {doTheConversion = id; exportToFiles = id; }; 
+            CLASS = MMSourceExporterWinCont; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                classDescriptionController = NSArrayController; 
+                classDescriptionSelector = NSPopUpButton; 
+                headerTextView = NSTextView; 
+                methodTextView = NSTextView; 
+                modelController = NSObjectController; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

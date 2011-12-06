@@ -1,0 +1,19 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = MMInspectorViewModel; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                model = MCPModel; 
+                modelController = NSObjectController; 
+                modelNameField = NSTextField; 
+                nibView = NSView; 
+                usesInnoDBButton = NSButton; 
+            }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {CLASS = MMModel; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

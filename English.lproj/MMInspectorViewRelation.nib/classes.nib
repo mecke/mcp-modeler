@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {updateTable = id; }; 
+            CLASS = MMInspectorViewRelation; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {nibView = NSView; relationController = NSObjectController; }; 
+            SUPERCLASS = NSView; 
+        }
+    ); 
+    IBVersion = 1; 
+}

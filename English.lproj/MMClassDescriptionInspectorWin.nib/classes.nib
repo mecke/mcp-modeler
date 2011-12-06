@@ -1,0 +1,25 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {updateClassDescription = id; }; 
+            CLASS = MMClassDescriptionInspectorWinCont; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {classDescriptionInspectorView = MMInspectorViewClassDescription; }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {
+            ACTIONS = {classDescriptionChanged = id; }; 
+            CLASS = MMInspectorViewClassDescription; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                attributeTable = NSTableView; 
+                classDescription = MCPClassDescription; 
+                nibView = NSView; 
+                relationTable = NSTableView; 
+            }; 
+            SUPERCLASS = NSView; 
+        }
+    ); 
+    IBVersion = 1; 
+}

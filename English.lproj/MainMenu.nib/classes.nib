@@ -1,0 +1,22 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                addAttribute = id; 
+                addClassDescription = id; 
+                addItem = id; 
+                addRelation = id; 
+                importModelFromDBServer = id; 
+                logModelOut = id; 
+                openInspector = id; 
+                removeItem = id; 
+                showSourceExporterWindow = id; 
+                updateModel = id; 
+            }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

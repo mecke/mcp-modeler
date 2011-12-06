@@ -1,0 +1,738 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		95F32BBD098CE7A6003820B5 /* Packaging */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 95F32BD3098CE7CC003820B5 /* Build configuration list for PBXAggregateTarget "Packaging" */;
+			buildPhases = (
+				95F32BBC098CE7A6003820B5 /* ShellScript */,
+			);
+			buildSettings = {
+				PRODUCT_NAME = Packaging;
+			};
+			dependencies = (
+				95F32BBF098CE7AE003820B5 /* PBXTargetDependency */,
+			);
+			name = Packaging;
+			productName = Packaging;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
+		8D15AC2D0486D014006FF6A4 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */; };
+		8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
+		8D15AC320486D014006FF6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		95372A1706F6137C00E5CD0C /* MMInspectorViewClassDescription.nib in Resources */ = {isa = PBXBuildFile; fileRef = 95372A1506F6137C00E5CD0C /* MMInspectorViewClassDescription.nib */; };
+		95372A2906F61D0600E5CD0C /* MMInspectorViewClassDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 95594EB506F5D480001D1371 /* MMInspectorViewClassDescription.m */; };
+		9537AD0006F1BEA600AAE407 /* MMInspectorViewModel.nib in Resources */ = {isa = PBXBuildFile; fileRef = 9537ACFE06F1BEA600AAE407 /* MMInspectorViewModel.nib */; };
+		9537AD0506F1BF8200AAE407 /* MMInspectorViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9537AD0306F1BF8200AAE407 /* MMInspectorViewModel.m */; };
+		953B1CBB098423CA00C5D9A9 /* MCPKit_bundled.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 953B1CBA098423CA00C5D9A9 /* MCPKit_bundled.framework */; };
+		953B1D14098425E800C5D9A9 /* MCPKit_bundled.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 953B1CBA098423CA00C5D9A9 /* MCPKit_bundled.framework */; };
+		955CEA0306F76DC5006B8B86 /* MMInspectorViewAttribute.nib in Resources */ = {isa = PBXBuildFile; fileRef = 955CEA0106F76DC5006B8B86 /* MMInspectorViewAttribute.nib */; };
+		955CEA0C06F76EBF006B8B86 /* MMInspectorViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 955CEA0A06F76EBF006B8B86 /* MMInspectorViewAttribute.m */; };
+		955D617707D5C17100FD0892 /* NSString+MMHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 957CB9B7078D40A800549AF2 /* NSString+MMHelper.m */; };
+		955D617807D5C17300FD0892 /* MMClassSourceExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 95062F18074428CB002A3C7D /* MMClassSourceExporter.m */; };
+		955D617907D5C17600FD0892 /* MMDBModelImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FB342A06FED94000FCB1FC /* MMDBModelImporter.m */; };
+		9562015006C825CA002FEE49 /* MMDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 9562014E06C825CA002FEE49 /* MMDocument.m */; };
+		9571084F071AD55300B8B004 /* MMInspectorViewRelation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9571084D071AD55300B8B004 /* MMInspectorViewRelation.m */; };
+		95710861071AE49600B8B004 /* MMInspectorViewRelation.nib in Resources */ = {isa = PBXBuildFile; fileRef = 9571085F071AE49600B8B004 /* MMInspectorViewRelation.nib */; };
+		958741A2075E507100659474 /* MMSourceExporterWinCont.m in Sources */ = {isa = PBXBuildFile; fileRef = 958741A0075E507100659474 /* MMSourceExporterWinCont.m */; };
+		958741AD075E52FC00659474 /* MMSourceExporterWin.nib in Resources */ = {isa = PBXBuildFile; fileRef = 958741AB075E52FC00659474 /* MMSourceExporterWin.nib */; };
+		95AB874F06FF310B0071DF68 /* MMDBModelImportWinCont.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AB874D06FF310B0071DF68 /* MMDBModelImportWinCont.m */; };
+		95AB876106FF341E0071DF68 /* MMDBModelImportWin.nib in Resources */ = {isa = PBXBuildFile; fileRef = 95AB875F06FF341E0071DF68 /* MMDBModelImportWin.nib */; };
+		95BCD96A098EBF57009606FD /* MCPModeler_App.icns in Resources */ = {isa = PBXBuildFile; fileRef = 95BCD969098EBF56009606FD /* MCPModeler_App.icns */; };
+		95C36A3906FCDC85004DFC42 /* MMModelInspectorWinCont.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C36A3706FCDC85004DFC42 /* MMModelInspectorWinCont.m */; };
+		95C36A4306FCDF84004DFC42 /* MMModelInspectorWin.nib in Resources */ = {isa = PBXBuildFile; fileRef = 95C36A4106FCDF84004DFC42 /* MMModelInspectorWin.nib */; };
+		95C36A7D06FCE5D5004DFC42 /* MMClassDescriptionInspectorWinCont.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C36A7B06FCE5D5004DFC42 /* MMClassDescriptionInspectorWinCont.m */; };
+		95C36A8B06FCE866004DFC42 /* MMClassDescriptionInspectorWin.nib in Resources */ = {isa = PBXBuildFile; fileRef = 95C36A8906FCE866004DFC42 /* MMClassDescriptionInspectorWin.nib */; };
+		95C36AD206FE0388004DFC42 /* MMAttributeInspectorWinCont.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C36AD006FE0388004DFC42 /* MMAttributeInspectorWinCont.m */; };
+		95C36ADC06FE05C0004DFC42 /* MMAttributeInspectorWin.nib in Resources */ = {isa = PBXBuildFile; fileRef = 95C36ADA06FE05C0004DFC42 /* MMAttributeInspectorWin.nib */; };
+		95F1684406C831FA00FB6513 /* MMDocMainWinCont.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F1684206C831FA00FB6513 /* MMDocMainWinCont.m */; };
+		95F1684906C8320F00FB6513 /* MMDocMainWin.nib in Resources */ = {isa = PBXBuildFile; fileRef = 95F1684706C8320F00FB6513 /* MMDocMainWin.nib */; };
+		95FD6A290732825B003757BA /* MMRelationInspectorWinCont.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FD6A270732825B003757BA /* MMRelationInspectorWinCont.m */; };
+		95FD6A32073283E2003757BA /* MMRelationInspectorWin.nib in Resources */ = {isa = PBXBuildFile; fileRef = 95FD6A30073283E2003757BA /* MMRelationInspectorWin.nib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		4A9504D0FFE6A4CB11CA0CBA /* Development */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		4A9504D1FFE6A4CB11CA0CBA /* Deployment */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		95F32BBE098CE7AE003820B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D15AC270486D014006FF6A4;
+			remoteInfo = MCPModeler;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		95FB34F106FEDA7E00FCB1FC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				953B1D14098425E800C5D9A9 /* MCPKit_bundled.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C1660FE840EACC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		2A37F4B0FDCFA73011CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A37F4B7FDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		2A37F4BAFDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
+		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32DBCF750370BD2300C91783 /* MCPModeler_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCPModeler_Prefix.pch; sourceTree = "<group>"; };
+		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D15AC370486D014006FF6A4 /* MCPModeler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCPModeler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95062F17074428CB002A3C7D /* MMClassSourceExporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMClassSourceExporter.h; sourceTree = "<group>"; };
+		95062F18074428CB002A3C7D /* MMClassSourceExporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMClassSourceExporter.m; sourceTree = "<group>"; };
+		95372A1606F6137C00E5CD0C /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MMInspectorViewClassDescription.nib; sourceTree = "<group>"; };
+		9537ACFF06F1BEA600AAE407 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MMInspectorViewModel.nib; sourceTree = "<group>"; };
+		9537AD0206F1BF8200AAE407 /* MMInspectorViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMInspectorViewModel.h; sourceTree = "<group>"; };
+		9537AD0306F1BF8200AAE407 /* MMInspectorViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMInspectorViewModel.m; sourceTree = "<group>"; };
+		953B1CBA098423CA00C5D9A9 /* MCPKit_bundled.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MCPKit_bundled.framework; path = ../MCPKit/build/Release/MCPKit_bundled.framework; sourceTree = SOURCE_ROOT; };
+		954D00E40792D37F00589E4E /* MCPModel+MCPEntreprise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MCPModel+MCPEntreprise.h"; path = "../../MCPKit/MCPEntrepriseKit/MCPModel+MCPEntreprise.h"; sourceTree = "<group>"; };
+		954D00E50792D37F00589E4E /* MCPModel+MCPEntreprise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MCPModel+MCPEntreprise.m"; path = "../../MCPKit/MCPEntrepriseKit/MCPModel+MCPEntreprise.m"; sourceTree = "<group>"; };
+		954D00E60792D37F00589E4E /* MCPObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCPObject.h; path = ../../MCPKit/MCPEntrepriseKit/MCPObject.h; sourceTree = "<group>"; };
+		954D00E70792D37F00589E4E /* MCPObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCPObject.m; path = ../../MCPKit/MCPEntrepriseKit/MCPObject.m; sourceTree = "<group>"; };
+		954F955207463649004E6687 /* MMClassSourceExporter+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMClassSourceExporter+Private.h"; sourceTree = "<group>"; };
+		955915F507550F95006931D3 /* MCPClassDescription+MCPEntreprise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MCPClassDescription+MCPEntreprise.h"; path = "../../MCPKit/MCPEntrepriseKit/MCPClassDescription+MCPEntreprise.h"; sourceTree = "<group>"; };
+		955915F607550F95006931D3 /* MCPClassDescription+MCPEntreprise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MCPClassDescription+MCPEntreprise.m"; path = "../../MCPKit/MCPEntrepriseKit/MCPClassDescription+MCPEntreprise.m"; sourceTree = "<group>"; };
+		95594EB406F5D480001D1371 /* MMInspectorViewClassDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMInspectorViewClassDescription.h; sourceTree = "<group>"; };
+		95594EB506F5D480001D1371 /* MMInspectorViewClassDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMInspectorViewClassDescription.m; sourceTree = "<group>"; };
+		955CEA0206F76DC5006B8B86 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MMInspectorViewAttribute.nib; sourceTree = "<group>"; };
+		955CEA0906F76EBF006B8B86 /* MMInspectorViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMInspectorViewAttribute.h; sourceTree = "<group>"; };
+		955CEA0A06F76EBF006B8B86 /* MMInspectorViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMInspectorViewAttribute.m; sourceTree = "<group>"; };
+		9562014D06C825CA002FEE49 /* MMDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDocument.h; sourceTree = "<group>"; };
+		9562014E06C825CA002FEE49 /* MMDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDocument.m; sourceTree = "<group>"; };
+		9571080A071AC18200B8B004 /* MCPClassDescription+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MCPClassDescription+Private.h"; path = "../../MCPKit/MCPEntrepriseKit/MCPClassDescription+Private.h"; sourceTree = "<group>"; };
+		9571081C071AC3B700B8B004 /* MCPRelation+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MCPRelation+Private.h"; path = "../../MCPKit/MCPEntrepriseKit/MCPRelation+Private.h"; sourceTree = "<group>"; };
+		9571083C071AD3B200B8B004 /* MCPAttribute+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MCPAttribute+Private.h"; path = "../../MCPKit/MCPEntrepriseKit/MCPAttribute+Private.h"; sourceTree = "<group>"; };
+		9571084C071AD55300B8B004 /* MMInspectorViewRelation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMInspectorViewRelation.h; sourceTree = "<group>"; };
+		9571084D071AD55300B8B004 /* MMInspectorViewRelation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMInspectorViewRelation.m; sourceTree = "<group>"; };
+		95710860071AE49600B8B004 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MMInspectorViewRelation.nib; sourceTree = "<group>"; };
+		957CB9B6078D40A800549AF2 /* NSString+MMHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MMHelper.h"; sourceTree = "<group>"; };
+		957CB9B7078D40A800549AF2 /* NSString+MMHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MMHelper.m"; sourceTree = "<group>"; };
+		95814BBC06CA82C600D3C52B /* MCPRelation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCPRelation.h; path = ../../MCPKit/MCPEntrepriseKit/MCPRelation.h; sourceTree = "<group>"; };
+		95814BBD06CA82C600D3C52B /* MCPRelation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCPRelation.m; path = ../../MCPKit/MCPEntrepriseKit/MCPRelation.m; sourceTree = "<group>"; };
+		9587419F075E507100659474 /* MMSourceExporterWinCont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSourceExporterWinCont.h; sourceTree = "<group>"; };
+		958741A0075E507100659474 /* MMSourceExporterWinCont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSourceExporterWinCont.m; sourceTree = "<group>"; };
+		958741AC075E52FC00659474 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MMSourceExporterWin.nib; sourceTree = "<group>"; };
+		95AB874C06FF310B0071DF68 /* MMDBModelImportWinCont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDBModelImportWinCont.h; sourceTree = "<group>"; };
+		95AB874D06FF310B0071DF68 /* MMDBModelImportWinCont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDBModelImportWinCont.m; sourceTree = "<group>"; };
+		95AB876006FF341E0071DF68 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MMDBModelImportWin.nib; sourceTree = "<group>"; };
+		95B003C206D6CCED00E02D3A /* MCPEntrepriseNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCPEntrepriseNotifications.h; path = ../SMySQL/MCPEntrepriseKit/MCPEntrepriseNotifications.h; sourceTree = "<group>"; };
+		95BCD969098EBF56009606FD /* MCPModeler_App.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = MCPModeler_App.icns; sourceTree = "<group>"; };
+		95C36A3606FCDC85004DFC42 /* MMModelInspectorWinCont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMModelInspectorWinCont.h; sourceTree = "<group>"; };
+		95C36A3706FCDC85004DFC42 /* MMModelInspectorWinCont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMModelInspectorWinCont.m; sourceTree = "<group>"; };
+		95C36A4206FCDF84004DFC42 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MMModelInspectorWin.nib; sourceTree = "<group>"; };
+		95C36A7A06FCE5D5004DFC42 /* MMClassDescriptionInspectorWinCont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMClassDescriptionInspectorWinCont.h; sourceTree = "<group>"; };
+		95C36A7B06FCE5D5004DFC42 /* MMClassDescriptionInspectorWinCont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMClassDescriptionInspectorWinCont.m; sourceTree = "<group>"; };
+		95C36A8A06FCE866004DFC42 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MMClassDescriptionInspectorWin.nib; sourceTree = "<group>"; };
+		95C36ACF06FE0388004DFC42 /* MMAttributeInspectorWinCont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMAttributeInspectorWinCont.h; sourceTree = "<group>"; };
+		95C36AD006FE0388004DFC42 /* MMAttributeInspectorWinCont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAttributeInspectorWinCont.m; sourceTree = "<group>"; };
+		95C36ADB06FE05C0004DFC42 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MMAttributeInspectorWin.nib; sourceTree = "<group>"; };
+		95F1684106C831FA00FB6513 /* MMDocMainWinCont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDocMainWinCont.h; sourceTree = "<group>"; };
+		95F1684206C831FA00FB6513 /* MMDocMainWinCont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDocMainWinCont.m; sourceTree = "<group>"; };
+		95F1684806C8320F00FB6513 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MMDocMainWin.nib; sourceTree = "<group>"; };
+		95F1686906C8405D00FB6513 /* MCPModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCPModel.h; path = ../../MCPKit/MCPEntrepriseKit/MCPModel.h; sourceTree = "<group>"; };
+		95F1686A06C8405D00FB6513 /* MCPModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCPModel.m; path = ../../MCPKit/MCPEntrepriseKit/MCPModel.m; sourceTree = "<group>"; };
+		95F1686F06C8418B00FB6513 /* MCPClassDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCPClassDescription.h; path = ../../MCPKit/MCPEntrepriseKit/MCPClassDescription.h; sourceTree = "<group>"; };
+		95F1687006C8418B00FB6513 /* MCPClassDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCPClassDescription.m; path = ../../MCPKit/MCPEntrepriseKit/MCPClassDescription.m; sourceTree = "<group>"; };
+		95F1687606C841E100FB6513 /* MCPAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCPAttribute.h; path = ../../MCPKit/MCPEntrepriseKit/MCPAttribute.h; sourceTree = "<group>"; };
+		95F1687706C841E100FB6513 /* MCPAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCPAttribute.m; path = ../../MCPKit/MCPEntrepriseKit/MCPAttribute.m; sourceTree = "<group>"; };
+		95F3BFA6073C04110064D965 /* MCPEntrepriseNotifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCPEntrepriseNotifications.m; path = ../SMySQL/MCPEntrepriseKit/MCPEntrepriseNotifications.m; sourceTree = "<group>"; };
+		95F9EA8206D4446D001A3214 /* MCPJoin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCPJoin.h; path = ../../MCPKit/MCPEntrepriseKit/MCPJoin.h; sourceTree = "<group>"; };
+		95F9EA8306D4446D001A3214 /* MCPJoin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCPJoin.m; path = ../../MCPKit/MCPEntrepriseKit/MCPJoin.m; sourceTree = "<group>"; };
+		95FB342906FED94000FCB1FC /* MMDBModelImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDBModelImporter.h; sourceTree = "<group>"; };
+		95FB342A06FED94000FCB1FC /* MMDBModelImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDBModelImporter.m; sourceTree = "<group>"; };
+		95FD6A260732825B003757BA /* MMRelationInspectorWinCont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMRelationInspectorWinCont.h; sourceTree = "<group>"; };
+		95FD6A270732825B003757BA /* MMRelationInspectorWinCont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMRelationInspectorWinCont.m; sourceTree = "<group>"; };
+		95FD6A31073283E2003757BA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MMRelationInspectorWin.nib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D15AC330486D014006FF6A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */,
+				953B1CBB098423CA00C5D9A9 /* MCPKit_bundled.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				953B1CBA098423CA00C5D9A9 /* MCPKit_bundled.framework */,
+				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A8FEA54F5311CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */,
+				2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB0FE9D524F11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D15AC370486D014006FF6A4 /* MCPModeler.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A37F4AAFDCFA73011CA2CEA /* MCPModeler */ = {
+			isa = PBXGroup;
+			children = (
+				9562014906C825A6002FEE49 /* Controller */,
+				9562014606C82594002FEE49 /* View */,
+				2A37F4ABFDCFA73011CA2CEA /* Model */,
+				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
+				2A37F4B8FDCFA73011CA2CEA /* Resources */,
+				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
+				19C28FB0FE9D524F11CA2CBB /* Products */,
+			);
+			name = MCPModeler;
+			sourceTree = "<group>";
+		};
+		2A37F4ABFDCFA73011CA2CEA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				954D00E60792D37F00589E4E /* MCPObject.h */,
+				954D00E70792D37F00589E4E /* MCPObject.m */,
+				957CB9B6078D40A800549AF2 /* NSString+MMHelper.h */,
+				957CB9B7078D40A800549AF2 /* NSString+MMHelper.m */,
+				95062F17074428CB002A3C7D /* MMClassSourceExporter.h */,
+				954F955207463649004E6687 /* MMClassSourceExporter+Private.h */,
+				95062F18074428CB002A3C7D /* MMClassSourceExporter.m */,
+				95FB342906FED94000FCB1FC /* MMDBModelImporter.h */,
+				95FB342A06FED94000FCB1FC /* MMDBModelImporter.m */,
+				95F1686906C8405D00FB6513 /* MCPModel.h */,
+				95F1686A06C8405D00FB6513 /* MCPModel.m */,
+				954D00E40792D37F00589E4E /* MCPModel+MCPEntreprise.h */,
+				954D00E50792D37F00589E4E /* MCPModel+MCPEntreprise.m */,
+				95F1686F06C8418B00FB6513 /* MCPClassDescription.h */,
+				9571080A071AC18200B8B004 /* MCPClassDescription+Private.h */,
+				95F1687006C8418B00FB6513 /* MCPClassDescription.m */,
+				955915F507550F95006931D3 /* MCPClassDescription+MCPEntreprise.h */,
+				955915F607550F95006931D3 /* MCPClassDescription+MCPEntreprise.m */,
+				95F1687606C841E100FB6513 /* MCPAttribute.h */,
+				9571083C071AD3B200B8B004 /* MCPAttribute+Private.h */,
+				95F1687706C841E100FB6513 /* MCPAttribute.m */,
+				95814BBC06CA82C600D3C52B /* MCPRelation.h */,
+				9571081C071AC3B700B8B004 /* MCPRelation+Private.h */,
+				95814BBD06CA82C600D3C52B /* MCPRelation.m */,
+				95F9EA8206D4446D001A3214 /* MCPJoin.h */,
+				95F9EA8306D4446D001A3214 /* MCPJoin.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2A37F4AFFDCFA73011CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				95B003C206D6CCED00E02D3A /* MCPEntrepriseNotifications.h */,
+				95F3BFA6073C04110064D965 /* MCPEntrepriseNotifications.m */,
+				32DBCF750370BD2300C91783 /* MCPModeler_Prefix.pch */,
+				2A37F4B0FDCFA73011CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				95BCD969098EBF56009606FD /* MCPModeler_App.icns */,
+				2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */,
+				8D15AC360486D014006FF6A4 /* Info.plist */,
+				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
+				2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */,
+				95F1684706C8320F00FB6513 /* MMDocMainWin.nib */,
+				95AB875F06FF341E0071DF68 /* MMDBModelImportWin.nib */,
+				958741AB075E52FC00659474 /* MMSourceExporterWin.nib */,
+				9537ACFE06F1BEA600AAE407 /* MMInspectorViewModel.nib */,
+				95372A1506F6137C00E5CD0C /* MMInspectorViewClassDescription.nib */,
+				955CEA0106F76DC5006B8B86 /* MMInspectorViewAttribute.nib */,
+				9571085F071AE49600B8B004 /* MMInspectorViewRelation.nib */,
+				95C36A4106FCDF84004DFC42 /* MMModelInspectorWin.nib */,
+				95C36A8906FCE866004DFC42 /* MMClassDescriptionInspectorWin.nib */,
+				95C36ADA06FE05C0004DFC42 /* MMAttributeInspectorWin.nib */,
+				95FD6A30073283E2003757BA /* MMRelationInspectorWin.nib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */,
+				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9562014606C82594002FEE49 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9537AD0206F1BF8200AAE407 /* MMInspectorViewModel.h */,
+				9537AD0306F1BF8200AAE407 /* MMInspectorViewModel.m */,
+				95594EB406F5D480001D1371 /* MMInspectorViewClassDescription.h */,
+				95594EB506F5D480001D1371 /* MMInspectorViewClassDescription.m */,
+				955CEA0906F76EBF006B8B86 /* MMInspectorViewAttribute.h */,
+				955CEA0A06F76EBF006B8B86 /* MMInspectorViewAttribute.m */,
+				9571084C071AD55300B8B004 /* MMInspectorViewRelation.h */,
+				9571084D071AD55300B8B004 /* MMInspectorViewRelation.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9562014906C825A6002FEE49 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9562014D06C825CA002FEE49 /* MMDocument.h */,
+				9562014E06C825CA002FEE49 /* MMDocument.m */,
+				95F1684106C831FA00FB6513 /* MMDocMainWinCont.h */,
+				95F1684206C831FA00FB6513 /* MMDocMainWinCont.m */,
+				9587419F075E507100659474 /* MMSourceExporterWinCont.h */,
+				958741A0075E507100659474 /* MMSourceExporterWinCont.m */,
+				95AB874C06FF310B0071DF68 /* MMDBModelImportWinCont.h */,
+				95AB874D06FF310B0071DF68 /* MMDBModelImportWinCont.m */,
+				95C36A3606FCDC85004DFC42 /* MMModelInspectorWinCont.h */,
+				95C36A3706FCDC85004DFC42 /* MMModelInspectorWinCont.m */,
+				95C36A7A06FCE5D5004DFC42 /* MMClassDescriptionInspectorWinCont.h */,
+				95C36A7B06FCE5D5004DFC42 /* MMClassDescriptionInspectorWinCont.m */,
+				95C36ACF06FE0388004DFC42 /* MMAttributeInspectorWinCont.h */,
+				95C36AD006FE0388004DFC42 /* MMAttributeInspectorWinCont.m */,
+				95FD6A260732825B003757BA /* MMRelationInspectorWinCont.h */,
+				95FD6A270732825B003757BA /* MMRelationInspectorWinCont.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D15AC270486D014006FF6A4 /* MCPModeler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95937C020934FF5C001B32E6 /* Build configuration list for PBXNativeTarget "MCPModeler" */;
+			buildPhases = (
+				8D15AC2B0486D014006FF6A4 /* Resources */,
+				8D15AC300486D014006FF6A4 /* Sources */,
+				8D15AC330486D014006FF6A4 /* Frameworks */,
+				95FB34F106FEDA7E00FCB1FC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = ../SMySQL/build;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MCPModeler_Prefix.pch;
+				HEADER_SEARCH_PATHS = ../SMySQL/MCPEntrepriseKit;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = MCPModeler;
+				WRAPPER_EXTENSION = app;
+			};
+			dependencies = (
+			);
+			name = MCPModeler;
+			productInstallPath = "$(HOME)/Applications";
+			productName = MCPModeler;
+			productReference = 8D15AC370486D014006FF6A4 /* MCPModeler.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 95937C060934FF5C001B32E6 /* Build configuration list for PBXProject "MCPModeler" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				4A9504D0FFE6A4CB11CA0CBA /* Development */,
+				4A9504D1FFE6A4CB11CA0CBA /* Deployment */,
+			);
+			hasScannedForEncodings = 1;
+			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* MCPModeler */;
+			projectDirPath = "";
+			targets = (
+				8D15AC270486D014006FF6A4 /* MCPModeler */,
+				95F32BBD098CE7A6003820B5 /* Packaging */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D15AC2B0486D014006FF6A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */,
+				8D15AC2D0486D014006FF6A4 /* MainMenu.nib in Resources */,
+				8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */,
+				95F1684906C8320F00FB6513 /* MMDocMainWin.nib in Resources */,
+				9537AD0006F1BEA600AAE407 /* MMInspectorViewModel.nib in Resources */,
+				95372A1706F6137C00E5CD0C /* MMInspectorViewClassDescription.nib in Resources */,
+				955CEA0306F76DC5006B8B86 /* MMInspectorViewAttribute.nib in Resources */,
+				95C36A4306FCDF84004DFC42 /* MMModelInspectorWin.nib in Resources */,
+				95C36A8B06FCE866004DFC42 /* MMClassDescriptionInspectorWin.nib in Resources */,
+				95C36ADC06FE05C0004DFC42 /* MMAttributeInspectorWin.nib in Resources */,
+				95AB876106FF341E0071DF68 /* MMDBModelImportWin.nib in Resources */,
+				95710861071AE49600B8B004 /* MMInspectorViewRelation.nib in Resources */,
+				95FD6A32073283E2003757BA /* MMRelationInspectorWin.nib in Resources */,
+				958741AD075E52FC00659474 /* MMSourceExporterWin.nib in Resources */,
+				95BCD96A098EBF57009606FD /* MCPModeler_App.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		95F32BBC098CE7A6003820B5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here\nMKDIRS=\"mkdir -p\"\nCP=\"cp -rp\"\nWORK_DIR=\"$TARGET_BUILD_DIR/Distributions\"\n\nBASE_DIST_NAME=\"MCPModeler\"\nVERSION_DIST=\"3.0.0\"\n\nSOURCE_FILES=\"Model View Controller Dependencies English.lproj MCPModeler.xcodeproj Testing.mcpmodel version.plist main.m Info.plist MCPModeler_App.icns\"\n\nBIN_FILES=\"MCPModeler.app\"\n\nLICENCE_FILES=\"gpl.txt gpl.html\"\n\nrm -rf \"$WORK_DIR\"\n$MKDIRS \"$WORK_DIR\"\ncd \"$WORK_DIR\"\n\n#cat - > foo.txt <<EOF\n#This Foo Bar saying Hello World...\n#EOF\n\n# Preparing the source distribution:\nSOURCE_DIST_NAME=\"${BASE_DIST_NAME}_src_${VERSION_DIST}\"\n# Create a writable DMG file :\nhdiutil create -megabytes 5 Sources_Temp.dmg -layout NONE\n# Mount it just to be able to format it (and format in HFS+)\nDEV_SOURCES=`hdid -nomount Sources_Temp.dmg`\nnewfs_hfs -v \"$SOURCE_DIST_NAME\" $DEV_SOURCES\nhdiutil eject $DEV_SOURCES\n# Mount in writable way:\nhdid Sources_Temp.dmg > mount_source.log\nDEV_SOURCES=`awk '{print $1}' mount_source.log`\nVOL_SOURCES=`awk '{print $2}' mount_source.log`\n# Copy the sources to the source volume...\ncd \"$SRCROOT\"\n$CP $SOURCE_FILES $VOL_SOURCES\n$CP $LICENCE_FILES $VOL_SOURCES\nfind -d $VOL_SOURCES/* -name '.svn' -exec rm -rf {} \\;\nrm -rf $VOL_SOURCES/.svn\n# Make a Tar/gz version of the distribution...\ncd $VOL_SOURCES\ncd ..\ngnutar -cvzf \"${WORK_DIR}/${SOURCE_DIST_NAME}.tgz\" ${SOURCE_DIST_NAME}/*\ncd \"$WORK_DIR\"\n# Copying is done, we can eject and compress the image:\nhdiutil eject $DEV_SOURCES\nhdiutil convert -format UDZO -imagekey zlib-level=9 Sources_Temp.dmg -o ${SOURCE_DIST_NAME}.dmg\n\n# Preparing the binary distribution:\nBINS_DIST_NAME=\"${BASE_DIST_NAME}_bin_${VERSION_DIST}\"\n# Create a writable DMG file :\nhdiutil create -megabytes 5 Bins_Temp.dmg -layout NONE\n# Mount it just to be able to format it (and format in HFS+)\nDEV_BINS=`hdid -nomount Bins_Temp.dmg`\nnewfs_hfs -v \"$BINS_DIST_NAME\" $DEV_BINS\nhdiutil eject $DEV_BINS\n# Mount in writable way:\nhdid Bins_Temp.dmg > mount_bin.log\nDEV_BINS=`awk '{print $1}' mount_bin.log`\nVOL_BINS=`awk '{print $2}' mount_bin.log`\n# Copy the sources to the source volume...\ncd \"$TARGET_BUILD_DIR\"\n$CP $BIN_FILES $VOL_BINS\ncd \"$SRCROOT\"\n$CP $LICENCE_FILES $VOL_BINS\ncd \"$WORK_DIR\"\n# Copying is done, we can eject and compress the image:\nhdiutil eject $DEV_BINS\nhdiutil convert -format UDZO -imagekey zlib-level=9 Bins_Temp.dmg -o ${BINS_DIST_NAME}.dmg\n\n\n# Clean_up:\nrm -f Sources_Temp.dmg\nrm -f mount_source.log\nrm -f Bins_Temp.dmg\nrm -f mount_bin.log\n\necho Everything will be in : $WORK_DIR\n\nexit 0\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D15AC300486D014006FF6A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D15AC320486D014006FF6A4 /* main.m in Sources */,
+				9562015006C825CA002FEE49 /* MMDocument.m in Sources */,
+				95F1684406C831FA00FB6513 /* MMDocMainWinCont.m in Sources */,
+				9537AD0506F1BF8200AAE407 /* MMInspectorViewModel.m in Sources */,
+				95372A2906F61D0600E5CD0C /* MMInspectorViewClassDescription.m in Sources */,
+				955CEA0C06F76EBF006B8B86 /* MMInspectorViewAttribute.m in Sources */,
+				95C36A3906FCDC85004DFC42 /* MMModelInspectorWinCont.m in Sources */,
+				95C36A7D06FCE5D5004DFC42 /* MMClassDescriptionInspectorWinCont.m in Sources */,
+				95C36AD206FE0388004DFC42 /* MMAttributeInspectorWinCont.m in Sources */,
+				95AB874F06FF310B0071DF68 /* MMDBModelImportWinCont.m in Sources */,
+				9571084F071AD55300B8B004 /* MMInspectorViewRelation.m in Sources */,
+				95FD6A290732825B003757BA /* MMRelationInspectorWinCont.m in Sources */,
+				958741A2075E507100659474 /* MMSourceExporterWinCont.m in Sources */,
+				955D617707D5C17100FD0892 /* NSString+MMHelper.m in Sources */,
+				955D617807D5C17300FD0892 /* MMClassSourceExporter.m in Sources */,
+				955D617907D5C17600FD0892 /* MMDBModelImporter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		95F32BBF098CE7AE003820B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D15AC270486D014006FF6A4 /* MCPModeler */;
+			targetProxy = 95F32BBE098CE7AE003820B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165FFE840EACC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1660FE840EACC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4B7FDCFA73011CA2CEA /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4BAFDCFA73011CA2CEA /* English */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		95372A1506F6137C00E5CD0C /* MMInspectorViewClassDescription.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95372A1606F6137C00E5CD0C /* English */,
+			);
+			name = MMInspectorViewClassDescription.nib;
+			sourceTree = "<group>";
+		};
+		9537ACFE06F1BEA600AAE407 /* MMInspectorViewModel.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9537ACFF06F1BEA600AAE407 /* English */,
+			);
+			name = MMInspectorViewModel.nib;
+			sourceTree = "<group>";
+		};
+		955CEA0106F76DC5006B8B86 /* MMInspectorViewAttribute.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				955CEA0206F76DC5006B8B86 /* English */,
+			);
+			name = MMInspectorViewAttribute.nib;
+			sourceTree = "<group>";
+		};
+		9571085F071AE49600B8B004 /* MMInspectorViewRelation.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95710860071AE49600B8B004 /* English */,
+			);
+			name = MMInspectorViewRelation.nib;
+			sourceTree = "<group>";
+		};
+		958741AB075E52FC00659474 /* MMSourceExporterWin.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				958741AC075E52FC00659474 /* English */,
+			);
+			name = MMSourceExporterWin.nib;
+			sourceTree = "<group>";
+		};
+		95AB875F06FF341E0071DF68 /* MMDBModelImportWin.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95AB876006FF341E0071DF68 /* English */,
+			);
+			name = MMDBModelImportWin.nib;
+			sourceTree = "<group>";
+		};
+		95C36A4106FCDF84004DFC42 /* MMModelInspectorWin.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95C36A4206FCDF84004DFC42 /* English */,
+			);
+			name = MMModelInspectorWin.nib;
+			sourceTree = "<group>";
+		};
+		95C36A8906FCE866004DFC42 /* MMClassDescriptionInspectorWin.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95C36A8A06FCE866004DFC42 /* English */,
+			);
+			name = MMClassDescriptionInspectorWin.nib;
+			sourceTree = "<group>";
+		};
+		95C36ADA06FE05C0004DFC42 /* MMAttributeInspectorWin.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95C36ADB06FE05C0004DFC42 /* English */,
+			);
+			name = MMAttributeInspectorWin.nib;
+			sourceTree = "<group>";
+		};
+		95F1684706C8320F00FB6513 /* MMDocMainWin.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95F1684806C8320F00FB6513 /* English */,
+			);
+			name = MMDocMainWin.nib;
+			sourceTree = "<group>";
+		};
+		95FD6A30073283E2003757BA /* MMRelationInspectorWin.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95FD6A31073283E2003757BA /* English */,
+			);
+			name = MMRelationInspectorWin.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95937C030934FF5C001B32E6 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = ../MCPKit/build/Release;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MCPModeler_Prefix.pch;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = MCPModeler;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		95937C040934FF5C001B32E6 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = ../MCPKit/build/Release;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MCPModeler_Prefix.pch;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = MCPModeler;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		95937C050934FF5C001B32E6 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = ../MCPKit/build/Release;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MCPModeler_Prefix.pch;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = MCPModeler;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+		95937C070934FF5C001B32E6 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Development;
+		};
+		95937C080934FF5C001B32E6 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Deployment;
+		};
+		95937C090934FF5C001B32E6 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Default;
+		};
+		95F32BD4098CE7CC003820B5 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = Packaging;
+			};
+			name = Development;
+		};
+		95F32BD5098CE7CC003820B5 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				PRODUCT_NAME = Packaging;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		95F32BD6098CE7CC003820B5 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = Packaging;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95937C020934FF5C001B32E6 /* Build configuration list for PBXNativeTarget "MCPModeler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95937C030934FF5C001B32E6 /* Development */,
+				95937C040934FF5C001B32E6 /* Deployment */,
+				95937C050934FF5C001B32E6 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		95937C060934FF5C001B32E6 /* Build configuration list for PBXProject "MCPModeler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95937C070934FF5C001B32E6 /* Development */,
+				95937C080934FF5C001B32E6 /* Deployment */,
+				95937C090934FF5C001B32E6 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		95F32BD3098CE7CC003820B5 /* Build configuration list for PBXAggregateTarget "Packaging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95F32BD4098CE7CC003820B5 /* Development */,
+				95F32BD5098CE7CC003820B5 /* Deployment */,
+				95F32BD6098CE7CC003820B5 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+}
